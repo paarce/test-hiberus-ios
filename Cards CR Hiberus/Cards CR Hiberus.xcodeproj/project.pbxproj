@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1B156333264FCA4C7843761C /* Pods_Cards_CR_HiberusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5094CCD9A5FB0114810A337F /* Pods_Cards_CR_HiberusTests.framework */; };
 		86865A4A2367C42C00953110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86865A492367C42C00953110 /* AppDelegate.swift */; };
-		86865A4C2367C42C00953110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86865A4B2367C42C00953110 /* ViewController.swift */; };
-		86865A4F2367C42C00953110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86865A4D2367C42C00953110 /* Main.storyboard */; };
+		86865A4F2367C42C00953110 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86865A4D2367C42C00953110 /* User.storyboard */; };
 		86865A512367C43000953110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86865A502367C43000953110 /* Assets.xcassets */; };
 		86865A542367C43000953110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86865A522367C43000953110 /* LaunchScreen.storyboard */; };
 		86865A5F2367C43000953110 /* Cards_CR_HiberusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86865A5E2367C43000953110 /* Cards_CR_HiberusTests.swift */; };
+		86983E792367CFA500B939A0 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E782367CFA500B939A0 /* UserInfoViewController.swift */; };
+		86983E7C2367CFCF00B939A0 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E7B2367CFCF00B939A0 /* UserInfoViewModel.swift */; };
 		FACDCEC49307B59F6ACF5D72 /* Pods_Cards_CR_Hiberus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8047990FAC8C9C9AEC912A7B /* Pods_Cards_CR_Hiberus.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,14 +36,15 @@
 		8047990FAC8C9C9AEC912A7B /* Pods_Cards_CR_Hiberus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cards_CR_Hiberus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86865A462367C42C00953110 /* Cards CR Hiberus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cards CR Hiberus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86865A492367C42C00953110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86865A4B2367C42C00953110 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		86865A4E2367C42C00953110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86865A4E2367C42C00953110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/User.storyboard; sourceTree = "<group>"; };
 		86865A502367C43000953110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86865A532367C43000953110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86865A552367C43000953110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86865A5A2367C43000953110 /* Cards CR HiberusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cards CR HiberusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86865A5E2367C43000953110 /* Cards_CR_HiberusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards_CR_HiberusTests.swift; sourceTree = "<group>"; };
 		86865A602367C43000953110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86983E782367CFA500B939A0 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		86983E7B2367CFCF00B939A0 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		FD668DAA2D248C71DEE6367E /* Pods-Cards CR HiberusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cards CR HiberusTests.release.xcconfig"; path = "Target Support Files/Pods-Cards CR HiberusTests/Pods-Cards CR HiberusTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +85,6 @@
 				560A0D482638679005874E72 /* Pods-Cards CR HiberusTests.debug.xcconfig */,
 				FD668DAA2D248C71DEE6367E /* Pods-Cards CR HiberusTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,12 +111,11 @@
 		86865A482367C42C00953110 /* Cards CR Hiberus */ = {
 			isa = PBXGroup;
 			children = (
-				86865A492367C42C00953110 /* AppDelegate.swift */,
-				86865A4B2367C42C00953110 /* ViewController.swift */,
-				86865A4D2367C42C00953110 /* Main.storyboard */,
-				86865A502367C43000953110 /* Assets.xcassets */,
+				86983E712367CE7000B939A0 /* App */,
+				86983E722367CE8900B939A0 /* Resource */,
+				86983E732367CEA100B939A0 /* Service */,
+				86983E742367CEA900B939A0 /* Supporting Files */,
 				86865A522367C43000953110 /* LaunchScreen.storyboard */,
-				86865A552367C43000953110 /* Info.plist */,
 			);
 			path = "Cards CR Hiberus";
 			sourceTree = "<group>";
@@ -127,6 +127,72 @@
 				86865A602367C43000953110 /* Info.plist */,
 			);
 			path = "Cards CR HiberusTests";
+			sourceTree = "<group>";
+		};
+		86983E712367CE7000B939A0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				86983E752367CF4C00B939A0 /* User */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		86983E722367CE8900B939A0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				86865A502367C43000953110 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		86983E732367CEA100B939A0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		86983E742367CEA900B939A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86865A492367C42C00953110 /* AppDelegate.swift */,
+				86865A552367C43000953110 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86983E752367CF4C00B939A0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				86983E762367CF5700B939A0 /* Storyboard */,
+				86983E772367CF6900B939A0 /* ViewController */,
+				86983E7A2367CFAD00B939A0 /* ViewModel */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		86983E762367CF5700B939A0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				86865A4D2367C42C00953110 /* User.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		86983E772367CF6900B939A0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86983E782367CFA500B939A0 /* UserInfoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		86983E7A2367CFAD00B939A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				86983E7B2367CFCF00B939A0 /* UserInfoViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +281,7 @@
 			files = (
 				86865A542367C43000953110 /* LaunchScreen.storyboard in Resources */,
 				86865A512367C43000953110 /* Assets.xcassets in Resources */,
-				86865A4F2367C42C00953110 /* Main.storyboard in Resources */,
+				86865A4F2367C42C00953110 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +363,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86865A4C2367C42C00953110 /* ViewController.swift in Sources */,
 				86865A4A2367C42C00953110 /* AppDelegate.swift in Sources */,
+				86983E792367CFA500B939A0 /* UserInfoViewController.swift in Sources */,
+				86983E7C2367CFCF00B939A0 /* UserInfoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,12 +388,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		86865A4D2367C42C00953110 /* Main.storyboard */ = {
+		86865A4D2367C42C00953110 /* User.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				86865A4E2367C42C00953110 /* Base */,
 			);
-			name = Main.storyboard;
+			name = User.storyboard;
 			sourceTree = "<group>";
 		};
 		86865A522367C43000953110 /* LaunchScreen.storyboard */ = {
@@ -463,7 +530,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBQ8QLJW23;
-				INFOPLIST_FILE = "Cards CR Hiberus/Info.plist";
+				INFOPLIST_FILE = "Cards CR Hiberus/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,7 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBQ8QLJW23;
-				INFOPLIST_FILE = "Cards CR Hiberus/Info.plist";
+				INFOPLIST_FILE = "Cards CR Hiberus/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
