@@ -125,7 +125,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="User Information" id="iwt-L9-Skc">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Done" id="nKe-TX-3QH"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Done" id="nKe-TX-3QH">
+                            <connections>
+                                <action selector="onDone:" destination="BYZ-38-t0r" id="jEv-I4-hzg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="doneBaritemButton" destination="nKe-TX-3QH" id="fO9-jb-epK"/>

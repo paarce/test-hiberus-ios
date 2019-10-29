@@ -20,4 +20,11 @@ struct CardModel : Codable {
     let copyId : Int?
     let arena : Int?
     let order : Int?
+    
+    func getImageUrl() -> URL? {
+        if let imageName = self.idName {
+            return URL(string: "http://www.clashapi.xyz/images/cards/\(imageName).png")
+        }
+        return nil
+    }
 }

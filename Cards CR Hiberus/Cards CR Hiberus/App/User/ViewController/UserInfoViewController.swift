@@ -43,6 +43,15 @@ class UserInfoViewController: UIViewController, UITextFieldDelegate {
         return self.nameTextField.isValid() && self.middleTextField.isValid() && self.lastnameTextField.isValid() && self.emailTextField.isValidEmail()
     }
     
+    @IBAction func onDone(_ sender: Any) {
+        if self.validAllFields() {
+            
+            if let vc = R.storyboard.card.instantiateInitialViewController() {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+    }
+    
     // MARK: - UITextFieldDelegate
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -55,15 +64,13 @@ class UserInfoViewController: UIViewController, UITextFieldDelegate {
     
     @objc func textFieldDidChange(_ textField: UITextField) {
         
-        print("type..")
         self.doneBaritemButton.isEnabled = self.validAllFields()
         
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if self.validAllFields() {
-            
-        }
+        
+        self.onDone(textField)
         
         return false
     }

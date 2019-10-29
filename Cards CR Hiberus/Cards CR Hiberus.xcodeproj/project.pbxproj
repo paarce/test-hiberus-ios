@@ -23,6 +23,8 @@
 		86983E8F2367E78B00B939A0 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E8E2367E78B00B939A0 /* CardViewModel.swift */; };
 		86983E912367E87E00B939A0 /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E902367E87E00B939A0 /* CardTableViewController.swift */; };
 		86983E932367E8E900B939A0 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86983E922367E8E900B939A0 /* Card.storyboard */; };
+		86983E962367F35600B939A0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E952367F35600B939A0 /* R.generated.swift */; };
+		86983E982367F9B800B939A0 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E972367F9B800B939A0 /* CardDetailViewController.swift */; };
 		FACDCEC49307B59F6ACF5D72 /* Pods_Cards_CR_Hiberus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8047990FAC8C9C9AEC912A7B /* Pods_Cards_CR_Hiberus.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		86983E8E2367E78B00B939A0 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		86983E902367E87E00B939A0 /* CardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
 		86983E922367E8E900B939A0 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		86983E952367F35600B939A0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		86983E972367F9B800B939A0 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		FD668DAA2D248C71DEE6367E /* Pods-Cards CR HiberusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cards CR HiberusTests.release.xcconfig"; path = "Target Support Files/Pods-Cards CR HiberusTests/Pods-Cards CR HiberusTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +179,7 @@
 		86983E742367CEA900B939A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				86983E952367F35600B939A0 /* R.generated.swift */,
 				86865A492367C42C00953110 /* AppDelegate.swift */,
 				86865A552367C43000953110 /* Info.plist */,
 			);
@@ -254,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				86983E902367E87E00B939A0 /* CardTableViewController.swift */,
+				86983E972367F9B800B939A0 /* CardDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 			buildConfigurationList = 86865A632367C43000953110 /* Build configuration list for PBXNativeTarget "Cards CR Hiberus" */;
 			buildPhases = (
 				CD4A86B5E5BF990F0420911F /* [CP] Check Pods Manifest.lock */,
+				86983E942367F26900B939A0 /* R.swift */,
 				86865A422367C42C00953110 /* Sources */,
 				86865A432367C42C00953110 /* Frameworks */,
 				86865A442367C42C00953110 /* Resources */,
@@ -376,6 +383,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		86983E942367F26900B939A0 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		A7F2045A9D8949592311D4E1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86983E892367E4CE00B939A0 /* ErrorModel.swift in Sources */,
+				86983E982367F9B800B939A0 /* CardDetailViewController.swift in Sources */,
 				86865A4A2367C42C00953110 /* AppDelegate.swift in Sources */,
 				86983E872367E36600B939A0 /* ApiManager.swift in Sources */,
 				86983E912367E87E00B939A0 /* CardTableViewController.swift in Sources */,
@@ -453,6 +481,7 @@
 				86983E8D2367E68300B939A0 /* CardModel.swift in Sources */,
 				86983E7C2367CFCF00B939A0 /* UserInfoViewModel.swift in Sources */,
 				86983E8B2367E52D00B939A0 /* Const.swift in Sources */,
+				86983E962367F35600B939A0 /* R.generated.swift in Sources */,
 				86983E8F2367E78B00B939A0 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
