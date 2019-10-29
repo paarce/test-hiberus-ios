@@ -16,6 +16,13 @@
 		86983E792367CFA500B939A0 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E782367CFA500B939A0 /* UserInfoViewController.swift */; };
 		86983E7C2367CFCF00B939A0 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E7B2367CFCF00B939A0 /* UserInfoViewModel.swift */; };
 		86983E802367DE9C00B939A0 /* uitextfield+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */; };
+		86983E872367E36600B939A0 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E862367E36600B939A0 /* ApiManager.swift */; };
+		86983E892367E4CE00B939A0 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E882367E4CE00B939A0 /* ErrorModel.swift */; };
+		86983E8B2367E52D00B939A0 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E8A2367E52D00B939A0 /* Const.swift */; };
+		86983E8D2367E68300B939A0 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E8C2367E68300B939A0 /* CardModel.swift */; };
+		86983E8F2367E78B00B939A0 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E8E2367E78B00B939A0 /* CardViewModel.swift */; };
+		86983E912367E87E00B939A0 /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E902367E87E00B939A0 /* CardTableViewController.swift */; };
+		86983E932367E8E900B939A0 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86983E922367E8E900B939A0 /* Card.storyboard */; };
 		FACDCEC49307B59F6ACF5D72 /* Pods_Cards_CR_Hiberus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8047990FAC8C9C9AEC912A7B /* Pods_Cards_CR_Hiberus.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +54,13 @@
 		86983E782367CFA500B939A0 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		86983E7B2367CFCF00B939A0 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "uitextfield+extension.swift"; sourceTree = "<group>"; };
+		86983E862367E36600B939A0 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		86983E882367E4CE00B939A0 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		86983E8A2367E52D00B939A0 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		86983E8C2367E68300B939A0 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		86983E8E2367E78B00B939A0 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		86983E902367E87E00B939A0 /* CardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
+		86983E922367E8E900B939A0 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
 		FD668DAA2D248C71DEE6367E /* Pods-Cards CR HiberusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cards CR HiberusTests.release.xcconfig"; path = "Target Support Files/Pods-Cards CR HiberusTests/Pods-Cards CR HiberusTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				86983E752367CF4C00B939A0 /* User */,
+				86983E812367E31900B939A0 /* Cards */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -151,6 +166,8 @@
 		86983E732367CEA100B939A0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				86983E852367E35400B939A0 /* Models */,
+				86983E862367E36600B939A0 /* ApiManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -202,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				86983E7E2367DDD800B939A0 /* Extensions */,
+				86983E8A2367E52D00B939A0 /* Const.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -212,6 +230,49 @@
 				86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86983E812367E31900B939A0 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				86983E822367E32C00B939A0 /* Storyboard */,
+				86983E832367E33800B939A0 /* ViewController */,
+				86983E842367E34400B939A0 /* ViewModel */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		86983E822367E32C00B939A0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				86983E922367E8E900B939A0 /* Card.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		86983E832367E33800B939A0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86983E902367E87E00B939A0 /* CardTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		86983E842367E34400B939A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				86983E8E2367E78B00B939A0 /* CardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		86983E852367E35400B939A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86983E882367E4CE00B939A0 /* ErrorModel.swift */,
+				86983E8C2367E68300B939A0 /* CardModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86983E932367E8E900B939A0 /* Card.storyboard in Resources */,
 				86865A542367C43000953110 /* LaunchScreen.storyboard in Resources */,
 				86865A512367C43000953110 /* Assets.xcassets in Resources */,
 				86865A4F2367C42C00953110 /* User.storyboard in Resources */,
@@ -382,10 +444,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86983E892367E4CE00B939A0 /* ErrorModel.swift in Sources */,
 				86865A4A2367C42C00953110 /* AppDelegate.swift in Sources */,
+				86983E872367E36600B939A0 /* ApiManager.swift in Sources */,
+				86983E912367E87E00B939A0 /* CardTableViewController.swift in Sources */,
 				86983E802367DE9C00B939A0 /* uitextfield+extension.swift in Sources */,
 				86983E792367CFA500B939A0 /* UserInfoViewController.swift in Sources */,
+				86983E8D2367E68300B939A0 /* CardModel.swift in Sources */,
 				86983E7C2367CFCF00B939A0 /* UserInfoViewModel.swift in Sources */,
+				86983E8B2367E52D00B939A0 /* Const.swift in Sources */,
+				86983E8F2367E78B00B939A0 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
