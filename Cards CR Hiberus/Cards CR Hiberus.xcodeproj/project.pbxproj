@@ -15,6 +15,7 @@
 		86865A5F2367C43000953110 /* Cards_CR_HiberusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86865A5E2367C43000953110 /* Cards_CR_HiberusTests.swift */; };
 		86983E792367CFA500B939A0 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E782367CFA500B939A0 /* UserInfoViewController.swift */; };
 		86983E7C2367CFCF00B939A0 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E7B2367CFCF00B939A0 /* UserInfoViewModel.swift */; };
+		86983E802367DE9C00B939A0 /* uitextfield+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */; };
 		FACDCEC49307B59F6ACF5D72 /* Pods_Cards_CR_Hiberus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8047990FAC8C9C9AEC912A7B /* Pods_Cards_CR_Hiberus.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		86865A602367C43000953110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86983E782367CFA500B939A0 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		86983E7B2367CFCF00B939A0 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "uitextfield+extension.swift"; sourceTree = "<group>"; };
 		FD668DAA2D248C71DEE6367E /* Pods-Cards CR HiberusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cards CR HiberusTests.release.xcconfig"; path = "Target Support Files/Pods-Cards CR HiberusTests/Pods-Cards CR HiberusTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 				86983E712367CE7000B939A0 /* App */,
 				86983E722367CE8900B939A0 /* Resource */,
 				86983E732367CEA100B939A0 /* Service */,
+				86983E7D2367DDD100B939A0 /* Util */,
 				86983E742367CEA900B939A0 /* Supporting Files */,
 				86865A522367C43000953110 /* LaunchScreen.storyboard */,
 			);
@@ -193,6 +196,22 @@
 				86983E7B2367CFCF00B939A0 /* UserInfoViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		86983E7D2367DDD100B939A0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				86983E7E2367DDD800B939A0 /* Extensions */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		86983E7E2367DDD800B939A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86865A4A2367C42C00953110 /* AppDelegate.swift in Sources */,
+				86983E802367DE9C00B939A0 /* uitextfield+extension.swift in Sources */,
 				86983E792367CFA500B939A0 /* UserInfoViewController.swift in Sources */,
 				86983E7C2367CFCF00B939A0 /* UserInfoViewModel.swift in Sources */,
 			);
