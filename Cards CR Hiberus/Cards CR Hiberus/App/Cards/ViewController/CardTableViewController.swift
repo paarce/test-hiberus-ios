@@ -33,8 +33,17 @@ class CardTableViewController: UITableViewController {
             switch result{
             case .success(let model):
                 self.cardVM.cards = model
-                print(self.cardVM.cardsFilter.count)
                 self.tableView.reloadData()
+                
+                DispatchQueue.main.async {
+                    
+                    if var types = (self.cardVM.cards.map { $0.type }).uniques as? [String] {
+                        types.insert("All types", at: 0)
+                        self.cardVM.cardsTypes = types
+                        self.searchController.searchBar.scopeButtonTitles = self.cardVM.cardsTypes
+                    }
+                }
+
                 break
                 
             case .failure(let errorT):
@@ -91,16 +100,22 @@ extension CardTableViewController: UISearchResultsUpdating, UISearchBarDelegate 
     func configSearchBar() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Restaurants"
+        searchController.searchBar.placeholder = "Search Cards"
         navigationItem.searchController = searchController
         
-        //searchController.searchBar.scopeButtonTitles = ["All type"]
+        self.searchController.searchBar.scopeButtonTitles = ["All types"]
         searchController.searchBar.delegate = self
     }
     
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        print(selectedScope)
         
+        self.cardVM.currentIndexType = selectedScope
+        let searcBar = searchController.searchBar
+        
+        if let q = searcBar.text {
+            self.cardVM.filterList(q: q)
+            self.tableView.reloadData()
+        }
     }
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -109,12 +124,8 @@ extension CardTableViewController: UISearchResultsUpdating, UISearchBarDelegate 
         
         if let q = searcBar.text {
             
-            if !q.isEmpty {
-                self.cardVM.cardsFilter = self.cardVM.cards.filter { model -> Bool in
-                    return model.name?.lowercased().contains(q.lowercased()) ?? false
-                }
-                self.tableView.reloadData()
-            }
+            self.cardVM.filterList(q: q)
+            self.tableView.reloadData()
         }
         
     }
@@ -135,4 +146,18 @@ extension CardTableViewController: UISearchResultsUpdating, UISearchBarDelegate 
         }
     }
     
+}
+
+extension Array where Element: Hashable {
+    var uniques: Array {
+        var buffer = Array()
+        var added = Set<Element>()
+        for elem in self {
+            if !added.contains(elem) {
+                buffer.append(elem)
+                added.insert(elem)
+            }
+        }
+        return buffer
+    }
 }

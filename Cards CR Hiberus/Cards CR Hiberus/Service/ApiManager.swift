@@ -75,7 +75,7 @@ extension Api: TargetType {
                         }
                         catch (let error) {
                             print(error)
-                            completation(.failure(.Error(ErrorModel(statusCode: 400, message: "Some went wrong"))))
+                            completation(.failure(.Error(ErrorModel(statusCode: 400, message: "Some went wrong with the response format"))))
                         }
                         
                     }else {
