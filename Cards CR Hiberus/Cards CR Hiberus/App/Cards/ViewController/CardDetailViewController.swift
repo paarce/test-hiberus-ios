@@ -20,11 +20,12 @@ class CardDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.initUI()
+        self.loadUI()
         
     }
     
-    func initUI() {
+    /// Method to load the data to UI
+    func loadUI() {
         
         if let data = self.data {
             
@@ -38,6 +39,4 @@ class CardDetailViewController: UIViewController {
         }
     }
     
-
-
 }

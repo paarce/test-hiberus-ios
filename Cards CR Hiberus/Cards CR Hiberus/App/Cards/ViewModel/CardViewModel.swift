@@ -19,11 +19,19 @@ class CardViewModel {
     var cardsTypes : [String] = []
     var currentIndexType = 0
 
+    
+    /// Method to get all cards
+    ///
+    /// - Parameter completation: Completation
     func callCardsObservable(completation: @escaping (Result<[CardModel],ErrorApi>) -> Void) {
         
         Api.request(endpoint : .cards, completation : completation)
     }
-
+    
+    
+    /// Method to filter the cards listed
+    ///
+    /// - Parameter q: Query typed by the user
     func filterList(q : String) {
         
         self.cardsFilter = self.cards.filter { model -> Bool in

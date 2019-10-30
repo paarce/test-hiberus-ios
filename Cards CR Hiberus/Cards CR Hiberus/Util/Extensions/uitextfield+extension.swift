@@ -11,17 +11,31 @@ import UIKit
 
 extension UITextField {
     
+    
+    /// Method to validate if the textfield is valid
+    ///
+    /// - Returns: Flag
     func isValid() -> Bool {
         
         return self.text != nil
     }
     
+    /// Method to validate if the email textfield is valid
+    ///
+    /// - Returns: Flag
     func isValidEmail() -> Bool {
         
         return self.text != nil ? self.text!.isEmail() : false
     }
     
     
+    /// Method to validate if the textfield is within the range
+    ///
+    /// - Parameters:
+    ///   - max: Value max length
+    ///   - range: Range
+    ///   - string: String to append
+    /// - Returns: Flag
     func isWithinLength(max: Int = 16, range: NSRange, string: String) -> Bool {
         
         let currentText = self.text ?? ""

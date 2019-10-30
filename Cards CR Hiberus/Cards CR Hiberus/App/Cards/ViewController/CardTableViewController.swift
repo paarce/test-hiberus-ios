@@ -27,6 +27,7 @@ class CardTableViewController: UITableViewController {
 
     }
     
+    /// Method to load the data to UI
     func loadUI() {
         
         cardVM.callCardsObservable  { result in
@@ -65,12 +66,10 @@ class CardTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return self.cardVM.cardsFilter.count
     }
 
@@ -98,6 +97,8 @@ class CardTableViewController: UITableViewController {
 
 extension CardTableViewController: UISearchResultsUpdating, UISearchBarDelegate {
     
+    
+    /// Method to config the search bar
     func configSearchBar() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false

@@ -22,6 +22,7 @@ class UserInfoViewController: UIViewController, UITextFieldDelegate {
         self.configUI()
     }
     
+    /// Method to config all elements in UI
     func configUI() {
         
         self.nameTextField.delegate = self
@@ -63,6 +64,7 @@ class UserInfoViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    /// Methos to clear values in all fields
     func cleanAllFields() {
         
         self.nameTextField.text = ""
@@ -71,6 +73,9 @@ class UserInfoViewController: UIViewController, UITextFieldDelegate {
         self.emailTextField.text = ""
     }
     
+    /// Method to valid values in all fields
+    ///
+    /// - Returns: <#return value description#>
     func validAllFields() -> Bool {
         return self.nameTextField.isValid() && self.middleTextField.isValid() && self.lastnameTextField.isValid() && self.emailTextField.isValidEmail()
     }
