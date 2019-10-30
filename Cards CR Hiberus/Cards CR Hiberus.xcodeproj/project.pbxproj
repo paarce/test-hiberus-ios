@@ -28,6 +28,7 @@
 		86983E9C23690AF200B939A0 /* string+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E9B23690AF200B939A0 /* string+extension.swift */; };
 		86983E9D2369237400B939A0 /* uitextfield+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */; };
 		86983E9E2369237800B939A0 /* string+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E9B23690AF200B939A0 /* string+extension.swift */; };
+		86983EA02369608D00B939A0 /* array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E9F2369608D00B939A0 /* array+extension.swift */; };
 		FACDCEC49307B59F6ACF5D72 /* Pods_Cards_CR_Hiberus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8047990FAC8C9C9AEC912A7B /* Pods_Cards_CR_Hiberus.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		86983E952367F35600B939A0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		86983E972367F9B800B939A0 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		86983E9B23690AF200B939A0 /* string+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "string+extension.swift"; sourceTree = "<group>"; };
+		86983E9F2369608D00B939A0 /* array+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "array+extension.swift"; sourceTree = "<group>"; };
 		FD668DAA2D248C71DEE6367E /* Pods-Cards CR HiberusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cards CR HiberusTests.release.xcconfig"; path = "Target Support Files/Pods-Cards CR HiberusTests/Pods-Cards CR HiberusTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +240,7 @@
 			children = (
 				86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */,
 				86983E9B23690AF200B939A0 /* string+extension.swift */,
+				86983E9F2369608D00B939A0 /* array+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				86983E7C2367CFCF00B939A0 /* UserInfoViewModel.swift in Sources */,
 				86983E8B2367E52D00B939A0 /* Const.swift in Sources */,
 				86983E962367F35600B939A0 /* R.generated.swift in Sources */,
+				86983EA02369608D00B939A0 /* array+extension.swift in Sources */,
 				86983E9C23690AF200B939A0 /* string+extension.swift in Sources */,
 				86983E8F2367E78B00B939A0 /* CardViewModel.swift in Sources */,
 			);
@@ -656,6 +660,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBQ8QLJW23;
 				INFOPLIST_FILE = "Cards CR Hiberus/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,6 +680,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBQ8QLJW23;
 				INFOPLIST_FILE = "Cards CR Hiberus/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

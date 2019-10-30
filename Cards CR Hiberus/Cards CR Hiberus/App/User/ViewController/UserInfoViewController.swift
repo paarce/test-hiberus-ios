@@ -93,11 +93,14 @@ class UserInfoViewController: UIViewController, UITextFieldDelegate {
     // MARK: - UITextFieldDelegate
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
         if textField != self.emailTextField  {
-            return string.rangeOfCharacter(from: NSCharacterSet.letters) != nil || string.isEmpty
+            return textField.isWithinLength(range: range, string: string) &&
+                   string.rangeOfCharacter(from: NSCharacterSet.letters) != nil || string.isEmpty
         }else {
-            return true
+            return textField.isWithinLength(max: 30 ,range: range, string: string)
         }
+    
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {

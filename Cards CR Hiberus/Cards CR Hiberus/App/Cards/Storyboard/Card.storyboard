@@ -49,10 +49,11 @@
                             <outlet property="delegate" destination="hMr-bk-YYi" id="auw-W8-bwP"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="jkb-PZ-mJU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fra-u5-eE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="248" y="47"/>
+            <point key="canvasLocation" x="1157.9710144927537" y="46.875"/>
         </scene>
         <!--Card Detail View Controller-->
         <scene sceneID="Yih-bI-eVL">
@@ -131,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ni5-zW-SJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991.304347826087" y="46.875"/>
+            <point key="canvasLocation" x="1901.449275362319" y="46.875"/>
         </scene>
     </scenes>
 </document>

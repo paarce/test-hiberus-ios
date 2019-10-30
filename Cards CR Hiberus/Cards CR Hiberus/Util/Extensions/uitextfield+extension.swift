@@ -21,4 +21,13 @@ extension UITextField {
         return self.text != nil ? self.text!.isEmail() : false
     }
     
+    
+    func isWithinLength(max: Int = 16, range: NSRange, string: String) -> Bool {
+        
+        let currentText = self.text ?? ""
+        guard let stringRange = Range(range, in: currentText) else { return false }
+        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+        
+        return updatedText.count <= max
+    }
 }

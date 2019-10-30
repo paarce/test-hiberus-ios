@@ -87,6 +87,7 @@ class CardTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let vc = R.storyboard.card.cardDetailViewController() {
+            self.searchController.isActive = false
             vc.data = self.cardVM.cardsFilter[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -146,18 +147,4 @@ extension CardTableViewController: UISearchResultsUpdating, UISearchBarDelegate 
         }
     }
     
-}
-
-extension Array where Element: Hashable {
-    var uniques: Array {
-        var buffer = Array()
-        var added = Set<Element>()
-        for elem in self {
-            if !added.contains(elem) {
-                buffer.append(elem)
-                added.insert(elem)
-            }
-        }
-        return buffer
-    }
 }
