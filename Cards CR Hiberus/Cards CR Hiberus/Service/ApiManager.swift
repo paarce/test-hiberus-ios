@@ -92,7 +92,7 @@ extension Api: TargetType {
                 }
                 
             case let .error(error):
-                print(error)
+                completation?(.failure(.Error(ErrorModel(statusCode: 400, message: "Please check your conenction"))))
             }
             }
             .disposed(by: disposbag)
