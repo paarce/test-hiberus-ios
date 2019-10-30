@@ -25,6 +25,9 @@
 		86983E932367E8E900B939A0 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86983E922367E8E900B939A0 /* Card.storyboard */; };
 		86983E962367F35600B939A0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E952367F35600B939A0 /* R.generated.swift */; };
 		86983E982367F9B800B939A0 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E972367F9B800B939A0 /* CardDetailViewController.swift */; };
+		86983E9C23690AF200B939A0 /* string+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E9B23690AF200B939A0 /* string+extension.swift */; };
+		86983E9D2369237400B939A0 /* uitextfield+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */; };
+		86983E9E2369237800B939A0 /* string+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E9B23690AF200B939A0 /* string+extension.swift */; };
 		FACDCEC49307B59F6ACF5D72 /* Pods_Cards_CR_Hiberus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8047990FAC8C9C9AEC912A7B /* Pods_Cards_CR_Hiberus.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,7 @@
 		86983E922367E8E900B939A0 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
 		86983E952367F35600B939A0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		86983E972367F9B800B939A0 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		86983E9B23690AF200B939A0 /* string+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "string+extension.swift"; sourceTree = "<group>"; };
 		FD668DAA2D248C71DEE6367E /* Pods-Cards CR HiberusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cards CR HiberusTests.release.xcconfig"; path = "Target Support Files/Pods-Cards CR HiberusTests/Pods-Cards CR HiberusTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */,
+				86983E9B23690AF200B939A0 /* string+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -482,6 +487,7 @@
 				86983E7C2367CFCF00B939A0 /* UserInfoViewModel.swift in Sources */,
 				86983E8B2367E52D00B939A0 /* Const.swift in Sources */,
 				86983E962367F35600B939A0 /* R.generated.swift in Sources */,
+				86983E9C23690AF200B939A0 /* string+extension.swift in Sources */,
 				86983E8F2367E78B00B939A0 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +497,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86865A5F2367C43000953110 /* Cards_CR_HiberusTests.swift in Sources */,
+				86983E9D2369237400B939A0 /* uitextfield+extension.swift in Sources */,
+				86983E9E2369237800B939A0 /* string+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

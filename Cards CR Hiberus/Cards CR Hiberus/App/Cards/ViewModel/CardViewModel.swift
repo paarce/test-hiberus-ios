@@ -10,7 +10,12 @@ import Foundation
 
 class CardViewModel {
     
-    var cards : [CardModel] = []
+    var cards : [CardModel] = [] {
+        didSet{
+            self.cardsFilter = self.cards
+        }
+    }
+    var cardsFilter : [CardModel] = []
 
     func callCardsObservable(completation: @escaping (Result<[CardModel],ErrorApi>) -> Void) {
         
