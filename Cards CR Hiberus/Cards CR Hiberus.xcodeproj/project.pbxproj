@@ -29,6 +29,12 @@
 		86983E9D2369237400B939A0 /* uitextfield+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E7F2367DE9C00B939A0 /* uitextfield+extension.swift */; };
 		86983E9E2369237800B939A0 /* string+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E9B23690AF200B939A0 /* string+extension.swift */; };
 		86983EA02369608D00B939A0 /* array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E9F2369608D00B939A0 /* array+extension.swift */; };
+		86983EA1236A957200B939A0 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E8E2367E78B00B939A0 /* CardViewModel.swift */; };
+		86983EA2236A965100B939A0 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E882367E4CE00B939A0 /* ErrorModel.swift */; };
+		86983EA3236A965400B939A0 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E8C2367E68300B939A0 /* CardModel.swift */; };
+		86983EA4236A966D00B939A0 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E862367E36600B939A0 /* ApiManager.swift */; };
+		86983EA5236A96C000B939A0 /* array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E9F2369608D00B939A0 /* array+extension.swift */; };
+		86983EA6236A96C000B939A0 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86983E8A2367E52D00B939A0 /* Const.swift */; };
 		FACDCEC49307B59F6ACF5D72 /* Pods_Cards_CR_Hiberus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8047990FAC8C9C9AEC912A7B /* Pods_Cards_CR_Hiberus.framework */; };
 /* End PBXBuildFile section */
 
@@ -500,9 +506,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86983EA2236A965100B939A0 /* ErrorModel.swift in Sources */,
+				86983EA1236A957200B939A0 /* CardViewModel.swift in Sources */,
 				86865A5F2367C43000953110 /* Cards_CR_HiberusTests.swift in Sources */,
+				86983EA4236A966D00B939A0 /* ApiManager.swift in Sources */,
 				86983E9D2369237400B939A0 /* uitextfield+extension.swift in Sources */,
 				86983E9E2369237800B939A0 /* string+extension.swift in Sources */,
+				86983EA3236A965400B939A0 /* CardModel.swift in Sources */,
+				86983EA5236A96C000B939A0 /* array+extension.swift in Sources */,
+				86983EA6236A96C000B939A0 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

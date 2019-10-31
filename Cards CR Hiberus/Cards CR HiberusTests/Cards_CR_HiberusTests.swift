@@ -10,6 +10,8 @@ import XCTest
 @testable import Cards_CR_Hiberus
 
 class Cards_CR_HiberusTests: XCTestCase {
+    
+    let cardVM = CardViewModel()
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,5 +28,21 @@ class Cards_CR_HiberusTests: XCTestCase {
     }
     
     
+    func test_callCardsObservable(){
+        
+        let expectation = XCTestExpectation(description: "call Cards ")
+        cardVM.callCardsObservable { result in
+            switch result {
+            case .success( let model):
+                XCTAssert(model.count > 0)
+                expectation.fulfill()
+            case .failure(let errorT):
+                XCTAssertNotNil(errorT.get().message)
+                XCTAssert(false)
+                expectation.fulfill()
+            }
+        }
+        wait(for: [expectation], timeout: 10.0)
+    }
 
 }
